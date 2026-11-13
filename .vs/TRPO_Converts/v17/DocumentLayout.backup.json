@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\TRPO_Converts\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9595E1D5-8966-4BAD-9519-5F871B534F83}|TRPO_Converts.csproj|c:\\users\\st310-08\\desktop\\romanov_pr31\\trpo_converts\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9595E1D5-8966-4BAD-9519-5F871B534F83}|TRPO_Converts.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9595E1D5-8966-4BAD-9519-5F871B534F83}|TRPO_Converts.csproj|c:\\users\\st310-08\\desktop\\romanov_pr31\\trpo_converts\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9595E1D5-8966-4BAD-9519-5F871B534F83}|TRPO_Converts.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9595E1D5-8966-4BAD-9519-5F871B534F83}|TRPO_Converts.csproj|c:\\users\\st310-08\\desktop\\romanov_pr31\\trpo_converts\\converters\\pricestrikethroughconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9595E1D5-8966-4BAD-9519-5F871B534F83}|TRPO_Converts.csproj|solutionrelative:converters\\pricestrikethroughconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9595E1D5-8966-4BAD-9519-5F871B534F83}|TRPO_Converts.csproj|c:\\users\\st310-08\\desktop\\romanov_pr31\\trpo_converts\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9595E1D5-8966-4BAD-9519-5F871B534F83}|TRPO_Converts.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9595E1D5-8966-4BAD-9519-5F871B534F83}|TRPO_Converts.csproj|c:\\users\\st310-08\\desktop\\romanov_pr31\\trpo_converts\\converters\\discountconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9595E1D5-8966-4BAD-9519-5F871B534F83}|TRPO_Converts.csproj|solutionrelative:converters\\discountconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PriceStrikeThroughConverter.cs",
+              "DocumentMoniker": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\TRPO_Converts\\Converters\\PriceStrikeThroughConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\PriceStrikeThroughConverter.cs",
+              "ToolTip": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\TRPO_Converts\\Converters\\PriceStrikeThroughConverter.cs",
+              "RelativeToolTip": "Converters\\PriceStrikeThroughConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T06:27:23.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DiscountConverter.cs",
+              "DocumentMoniker": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\TRPO_Converts\\Converters\\DiscountConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\DiscountConverter.cs",
+              "ToolTip": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\TRPO_Converts\\Converters\\DiscountConverter.cs",
+              "RelativeToolTip": "Converters\\DiscountConverter.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T05:43:43.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\TRPO_Converts\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\TRPO_Converts\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAgwFUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T05:41:58.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\TRPO_Converts\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\TRPO_Converts\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-13T05:40:56.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\TRPO_Converts\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\TRPO_Converts\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T05:40:55.808Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
