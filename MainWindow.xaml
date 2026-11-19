@@ -10,13 +10,13 @@
         Title="MainWindow" Height="450" Width="800">
 
     <Window.Resources>
-        <models:Product x:Key="product"/>
-        <converters:DiscountConverter x:Key="discountConverter"/>
-        <converters:PriceStrikeThroughConverter x:Key="priceStrikethroughConverter"/>
+        <models:Parcel x:Key="parcel"/>
+        <converters:WeightConverter x:Key="WeightConverter"/>
+        <converters:ColorConverter x:Key="ColorConverter"/>
     </Window.Resources>
 
     <Window.DataContext>
-        <Binding Source="{StaticResource product}"/>
+        <Binding Source="{StaticResource parcel}"/>
     </Window.DataContext>
     
     
@@ -28,72 +28,72 @@
 
         <StackPanel Grid.Column="0" Margin="5">
             <StackPanel>
-                <Label>Id</Label>
-                <TextBox Text="{Binding Id,UpdateSourceTrigger=PropertyChanged}"/>
+                <Label>Получатель</Label>
+                <TextBox Text="{Binding Recipient,UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
 
             <StackPanel >
-                <Label>Название</Label>
-                <TextBox Text="{Binding Name,UpdateSourceTrigger=PropertyChanged}"/>
+                <Label>Вес в граммах</Label>
+                <TextBox Text="{Binding Weight,Converter={StaticResource WeightConverter},UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
 
             <StackPanel >
-                <Label>Цена</Label>
-                <TextBox Text="{Binding Price}"/>
+                <Label>Цена за каждый кг</Label>
+                <TextBox Text="{Binding RatePerKg,UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
 
             <StackPanel >
-                <Label>Скидка(в %)</Label>
-                <TextBox Text="{Binding Discount,Converter={StaticResource discountConverter},UpdateSourceTrigger=PropertyChanged}"/>
+                <Label>Доп. сбор</Label>
+                <TextBox Text="{Binding Surcharge, TargetNullValue='',UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Margin="5">
 
             <StackPanel>
-                <Label>Id:</Label>
-                <TextBlock Text="{Binding Id}"/>
+                <Label>Получитель:</Label>
+                <TextBlock Text="{Binding Recipient}"/>
             </StackPanel>
 
             <StackPanel>
-                <Label>Название:</Label>
-                <TextBlock Text="{Binding Name}"/>
+                <Label>Вес в кг:</Label>
+                <TextBlock Text="{Binding Weight, StringFormat={}{0} кг}"/>
             </StackPanel>
 
             <StackPanel>
                 <Label>Цена:</Label>
-                <TextBlock Text="{Binding Price, StringFormat={}{0:C},ConverterCulture=ru-RU}"
-                           TextDecorations="{Binding PriceDiscount,Converter={StaticResource priceStrikethroughConverter}}"/>
+                <TextBlock Text="{Binding DeliveryCostWithoutSurcharge, StringFormat={}{0:C},ConverterCulture=ru-RU}"/>
             </StackPanel>
 
             <StackPanel>
                 <StackPanel.Style>
                     <Style TargetType="StackPanel">
                         <Style.Triggers>
-                            <DataTrigger Binding="{Binding Discount}" Value="{x:Null}">
+                            <DataTrigger Binding="{Binding Surcharge}" Value="{x:Null}">
                                 <Setter Property="Visibility" Value="Collapsed"/>
                             </DataTrigger>
                         </Style.Triggers>
                     </Style>
                     
                 </StackPanel.Style>
-                <Label>Цена со скидкой:</Label>
-                <TextBlock Text="{Binding PriceDiscount, StringFormat={}{0:C},ConverterCulture=ru-RU, UpdateSourceTrigger=PropertyChanged}"/>
+                <Label>Цена с доп. сбором:</Label>
+                <TextBlock Text="{Binding DeliveryCost, StringFormat={}{0:C},ConverterCulture=ru-RU}"
+                           Foreground="{Binding DeliveryCost,Converter={StaticResource ColorConverter}}"/>
             </StackPanel>
 
             <StackPanel>
                 <StackPanel.Style>
                     <Style TargetType="StackPanel">
                         <Style.Triggers>
-                            <DataTrigger Binding="{Binding Discount}" Value="{x:Null}">
+                            <DataTrigger Binding="{Binding Surcharge}" Value="{x:Null}">
                                 <Setter Property="Visibility" Value="Collapsed"/>
                             </DataTrigger>
                         </Style.Triggers>
                     </Style>
                 </StackPanel.Style>
                 
-                <Label>Скидка(в %):</Label>
-                <TextBlock Text="{Binding Discount, StringFormat={}{0:P0}}"/>
+                <Label>Доп. сбор:</Label>
+                <TextBlock Text="{Binding Surcharge, StringFormat={}{0:C},ConverterCulture=ru-RU}"/>
             </StackPanel>
 
         </StackPanel>

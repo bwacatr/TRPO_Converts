@@ -6,19 +6,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
+using System.Windows.Media;
 
 namespace TRPO_Converts.Converters
 {
-    public class PriceStrikeThroughConverter : IValueConverter
+    public class ColorConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             float input = (float)(value ?? 0);
             if (input > 0)
             {
-                return TextDecorations.Strikethrough;
+                return Brushes.Red;
             }
-            return null;
+            return Brushes.Black;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

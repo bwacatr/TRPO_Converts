@@ -8,7 +8,7 @@ using System.Windows.Data;
 
 namespace TRPO_Converts.Converters
 {
-    class DiscountConverter : IValueConverter
+    class WeightConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
@@ -17,11 +17,11 @@ namespace TRPO_Converts.Converters
                 return String.Empty;
             }
 
-            if (value is float f) return System.Convert.ToInt32(f * 100);
-            if (value is double d) return System.Convert.ToInt32(d * 100);
+            if (value is float f) return System.Convert.ToInt32(f * 1000);
+            if (value is double d) return System.Convert.ToInt32(d * 1000);
 
             if (float.TryParse(value.ToString(), NumberStyles.Float, culture, out float result))
-                return System.Convert.ToInt32(result * 100);
+                return System.Convert.ToInt32(result * 1000);
            
             return String.Empty;
         
@@ -32,7 +32,7 @@ namespace TRPO_Converts.Converters
             if (value == null) return null;
 
             if (float.TryParse(value.ToString(), NumberStyles.Float, culture, out float result))
-                return result / 100f;
+                return result / 1000f;
             return null;
 
         }
