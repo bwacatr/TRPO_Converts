@@ -77,7 +77,7 @@
                     
                 </StackPanel.Style>
                 <Label>Цена с доп. сбором:</Label>
-                <TextBlock Text="{Binding DeliveryCost, StringFormat={}{0:C},ConverterCulture=ru-RU}"
+                <TextBlock Text="{Binding DeliveryCost, StringFormat={}{0:C},ConverterCulture=ru-RU, Mode=OneWay}"
                            Foreground="{Binding DeliveryCost,Converter={StaticResource ColorConverter}}"/>
             </StackPanel>
 

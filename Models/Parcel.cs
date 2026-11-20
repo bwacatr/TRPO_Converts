@@ -24,7 +24,12 @@ namespace TRPO_Converts.Models
             {
                 if (_weight != value)
                 {
-                    _weight = value;
+                    if (value < 0)
+                    {
+                        _weight = value * (-1);
+                    }
+                    else { _weight = value; }
+
                     OnPropertyChanged();
                     OnPropertyChanged(nameof(DeliveryCost));
                     OnPropertyChanged(nameof(DeliveryCostWithoutSurcharge));
@@ -52,7 +57,11 @@ namespace TRPO_Converts.Models
             {
                 if (_ratePerKg != value)
                 {
-                    _ratePerKg = value;
+                    if (value < 0)
+                    {
+                        _ratePerKg = value * (-1);
+                    }
+                    else { _ratePerKg = value; }
                     OnPropertyChanged();
                     OnPropertyChanged(nameof(DeliveryCost));
                     OnPropertyChanged(nameof(DeliveryCostWithoutSurcharge));
@@ -66,8 +75,13 @@ namespace TRPO_Converts.Models
             {
                 if (_surcharge != value)
                 {
-                    _surcharge = value;
-                    OnPropertyChanged();
+                    if (value < 0)
+                    {
+                        _surcharge = value * (-1);
+                    }
+                    else { _surcharge = value; }
+
+                        OnPropertyChanged();
                     OnPropertyChanged(nameof(DeliveryCost));
                 }    
             } 

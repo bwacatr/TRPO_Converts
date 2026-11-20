@@ -41,3 +41,4 @@ C:\Users\Анатолий\Desktop\задачи\TRPO_Converts\obj\Debug\net8.0-wi
 C:\Users\Анатолий\Desktop\задачи\TRPO_Converts\obj\Debug\net8.0-windows\TRPO_Converts.pdb
 C:\Users\Анатолий\Desktop\задачи\TRPO_Converts\obj\Debug\net8.0-windows\TRPO_Converts.genruntimeconfig.cache
 C:\Users\Анатолий\Desktop\задачи\TRPO_Converts\obj\Debug\net8.0-windows\ref\TRPO_Converts.dll
+C:\Users\st310-08\Desktop\Romanov_PR31\TRPO_Converts\obj\Debug\net8.0-windows\TRPO_Converts.sourcelink.json
